@@ -27,8 +27,8 @@ export async function createCategory(initialState: any, formData: FormData) {
     return {
       values:
       {
-        name: dados.name,
-        icon: dados.icon
+        name: typeof dados.name === "string" ? dados.name : "",
+        icon: typeof dados.icon === "string" ? dados.icon : ""
       },
       errors: {
         name: errors.find((error: any) => error.field === "name")?.message,

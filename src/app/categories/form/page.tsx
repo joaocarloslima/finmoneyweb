@@ -6,8 +6,9 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { useActionState } from "react";
 
+
 const initialState = {
-  value: {
+  values: {
     name: "",
     icon: "",
   },
