@@ -1,6 +1,7 @@
 "use client"
 import { createCategory } from "@/app/actions/category-actions";
-import Navbar from "@/components/navbar";
+import NavBar from "@/components/nav-bar";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
@@ -25,7 +26,7 @@ export default function CategoriesForm() {
   );
   return (
     <>
-      <Navbar active="categorias" />
+      <NavBar active="categorias" />
       <main className="flex items-center justify-center">
         <div className="bg-slate-900 rounded p-5 m-6 max-w-[500px]">
           <h2 className="font-bold">Cadastrar categoria</h2>

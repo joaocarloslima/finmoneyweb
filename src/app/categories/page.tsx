@@ -1,16 +1,16 @@
 import CategoryItem from "@/components/category-item";
-import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import Link from "next/link";
 import { getCategories } from "../actions/category-actions";
+import NavBar from "@/components/nav-bar";
 
 export default async function Categoriespage(){
     const data: Array<Category> = await getCategories()
 
     return(
     <>
-    <Navbar active="categorias"/>
+    <NavBar active="categorias"/>
 
     <main className="flex items-center justify-center">
         <div className=" bg-slate-900 rounded min-w-2/3 p-5 m-6">

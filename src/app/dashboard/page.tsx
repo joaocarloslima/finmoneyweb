@@ -1,15 +1,20 @@
-import Navbar from "@/components/navbar";
+import NavBar from "@/components/nav-bar";
+import { DashbooardCards } from "./dashboard-cards";
+import { CategoriesChart } from "./categories-chart";
 
-export default function Dashboardpage(){
-    return(
-    <>
-    <Navbar active="dashboard" />
+export default function DashboardPage() {
+    return (
+        <>
+            <NavBar active="dashboard" />
 
-    <main className="flex items-center justify-center">
-        <div className=" bg-slate-900 rounded min-w-max-2/3 p-5 m-6">
-            <h2 className="text-lg font-bold">Dashboard</h2>
-        </div>
-    </main>
-    </>
+            <main className="flex justify-center items-center">
+                <div className=" w-full p-6 rounded m-6">
+                    
+                    <DashbooardCards />
+
+                    <CategoriesChart />
+                </div>
+            </main>
+        </>
     )
 }
